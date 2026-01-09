@@ -10,7 +10,7 @@ function App() {
     <Outlet/>
     </main>
 
-   <footer>This is Footer</footer>
+   <footer>This Is Footer</footer>
     </>
   )
 }
