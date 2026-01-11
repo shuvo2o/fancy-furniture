@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaBagShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
@@ -31,6 +31,7 @@ const NavItems = ({ toggleMenu }) => {
 
 const Navbar = () => {
   const [isMenuOpen, setIsmenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const toggleMenu = () => {
     setIsmenuOpen(prevState => !prevState)
   }
@@ -38,8 +39,22 @@ const Navbar = () => {
   const KeyPress = () => {
     setIsKeyPress("Lock Open")
   }
+  // when scroll apply bg color to navbar
+  useEffect(()=>{
+    const handelScroll = ()=>{
+     if(window.scrollY>50) {
+      setIsScrolled(true);
+     }else{
+      setIsScrolled(false);
+     }
+    }
+    window.addEventListener('scroll', handelScroll);
+    return () =>{
+       window.addEventListener('scroll', handelScroll);
+    }
+  },[])
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out text-white`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out ${isScrolled ? "bg-white shadow-md" : "bg-transparent text-white"} `}>
       <nav className='container flex items-center justify-between px-4 py-6 mx-auto max-w-screen-2xl'>
         <Link to="/" className='font-bold'>Logo</Link>
         {/* Hambuger mobile menu */}
