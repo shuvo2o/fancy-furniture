@@ -1,6 +1,7 @@
 import React from 'react';
 import bannerImg from "../../assets/hero.png";
 import { FaSearch } from 'react-icons/fa';
+import TooltipButton from '../../components/TooltipButton';
 
 const Hero = () => {
     return (
@@ -24,22 +25,22 @@ const Hero = () => {
                 </div>
             </div>
             {/* blur effect and tooltips */}
-            <div className='absolute inset-x-0 bottom-0 -mb-2 h-3/4 bg-gradient-to-t from-white via-transparent to-transparent blur-sm'/>
+            <div className='absolute inset-x-0 bottom-0 -mb-2 h-3/4 bg-gradient-to-t from-white via-transparent to-transparent blur-sm' />
             {/* tooltips */}
-            <div className='absolute bottom-40 left-24 group'>
-                <button className='relative p-4 text-xl rounded-full border-1 bg-white/20'>
-                <div className='absolute hidden p-2 mb-3 space-x-1 transform -translate-x-1/2 rounded shadow-md group-hover:flex bg-white/20 bottom-full left-1/2-lg'>
-                    <div className='bg-red-700 border-white rounded-full size-6'/>
-                    <div className='bg-green-700 border-white rounded-full size-6'/>
-                    <div className='bg-blue-700 border-white rounded-full size-6'/>
-                    {/* tooltip arrow */}
-                   <div className="absolute left-1/2 -bottom-2 w-0 h-0 -translate-x-1/2 border-l-[8px] border-r-[8px] border-t-[8px] border-l-transparent border-r-transparent border-t-white/35"></div>
-                </div>
-                </button>
-                
+
+
+            <div className='absolute hidden xl:block bottom-40 left-24'>
+                <TooltipButton position="bottom" />
             </div>
-                
-     
+            <div className='absolute hidden xl:block bottom-52 left-96'>
+                <TooltipButton position="bottom" />
+            </div>
+            <div className='absolute hidden xl:block bottom-30 right-[810px]'>
+                <TooltipButton position="bottom" />
+            </div>
+            <div className='absolute hidden xl:block bottom-12 right-16'>
+                <TooltipButton position="bottom" />
+            </div>
 
         </section>
     );
