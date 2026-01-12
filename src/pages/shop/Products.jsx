@@ -1,4 +1,6 @@
 import React from 'react'
+import { products } from './../../utils/products';
+import ProductCard from './ProductCard';
 
 const Products = ({ headline }) => {
   const categories = ["Chair", "Beds", "Sofa", "Lamp"];
@@ -20,13 +22,14 @@ const Products = ({ headline }) => {
           </div>
         </div>
         {/* products grid */}
-        {/* <div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-            {filteredProducts.slice(0, visibleProducts).map((product, index) => (
-              <ProductCard key={index} product={product} />
-            ))}
-          </div>
-        </div> */}
+        <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4'>
+          {
+            products.map((product, index)=>(
+              <ProductCard key={index} product={product}/>
+            ))
+          }
+        </div>
+
       </div>
     </div>
   )
