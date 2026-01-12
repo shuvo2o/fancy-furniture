@@ -15,7 +15,7 @@ const Products = ({ headline }) => {
 
   return (
     <div>
-      <div className='section-container'>
+      <div className='px-4 mx-auto section-container max-w-7xl'>
         <h2 className='my-8 text-4xl font-bold text-center'>{headline}</h2>
         {/* category */}
         <div className='bg-[#EEEEEE] max-w-md mx-auto sm:rounded-full md:p-2.5 py-5 mb-16'>
