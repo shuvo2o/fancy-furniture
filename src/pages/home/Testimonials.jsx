@@ -12,10 +12,10 @@ import Rating from '../../components/Rating';
 
 const Testimonials = () => {
     return (
-        <section className='px-4 mx-auto my-24 section-container max-w-7xl'>
+        <section className='px-4 mx-auto section-container max-w-7xl'>
             <div className='mb-12 text-center'>
                 <h3 className='mb-4 text-lg font-semibold uppercase text-amber-500'>Reviews</h3>
-                <h2 className='text-4xl font-bold capitalize'>Our Client Reviews</h2>
+                <h2 className='text-4xl font-bold capitalize dark:text-white'>Our Client Reviews</h2>
             </div>
 
             <Swiper 

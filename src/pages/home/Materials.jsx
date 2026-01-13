@@ -9,9 +9,9 @@ const Materials = () => {
 
             <div className='mx-auto lg:1/2 md:w-1/2'>
                 <h3 className='mb-4 text-lg font-semibold uppercase text-amber-500'>Materials</h3>
-                <h2 className='text-4xl font-bold capitalize lg:w-1/2'>Very serious materials for making furniture</h2>
-                <h4 className='mb-5 text-black lg:w-2/3'>Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price</h4>
-                <Button text="More Info" />
+                <h2 className='text-4xl font-bold capitalize lg:w-1/2 dark:text-white'>Very serious materials for making furniture</h2>
+                <h4 className='mb-5 text-black lg:w-2/3 dark:text-white'>Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price</h4>
+                <Button text="More Info"  />
             </div>
             <div className='grid items-center grid-cols-2 md:w-1/2 md:items-end md:grid-cols-3'>
                 <div>

@@ -14,9 +14,8 @@ const Products = ({ headline }) => {
   }
 
   return (
-    <div>
-      <div className='px-4 mx-auto section-container max-w-7xl'>
-        <h2 className='my-8 text-4xl font-bold text-center'>{headline}</h2>
+      <div className='px-4 mx-auto dark:bg-gray-800 section-container max-w-7xl'>
+        <h2 className='my-8 text-4xl font-bold text-center dark:text-white'>{headline}</h2>
         {/* category */}
         <div className='bg-[#EEEEEE] max-w-md mx-auto sm:rounded-full md:p-2.5 py-5 mb-16'>
           <div className='flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-between'>
@@ -57,7 +56,7 @@ const Products = ({ headline }) => {
         }
 
       </div>
-    </div>
+  
   )
 }
 
