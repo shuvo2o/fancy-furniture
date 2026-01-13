@@ -4,15 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        /* Section-er dimension Materials-er moto set kora holo */
-        <footer className="mt-24 bg-secondary-bg dark:bg-gray-900">
-            {/* Main Content Container: Materials-er moto same alignment */}
+        <footer className=" dark:bg-gray-900">
             <div className="px-4 pt-20 pb-12 mx-auto max-w-7xl section-container">
                 <div className="grid grid-cols-1 gap-8 text-black sm:grid-cols-2 md:grid-cols-5 dark:text-white">
-                    
-                    {/* First Div: Logo and Description (Wider Column) */}
+
                     <div className="md:col-span-2">
-                        <h2 className="mb-4 text-2xl font-bold">Panto</h2>
+                        <h2 className="mb-4 text-2xl font-bold">Fancy Furniture</h2>
                         <p className="text-gray-600 md:mr-12 dark:text-gray-400">
                             YourCompany is dedicated to providing the best quality products to enhance your home and lifestyle. We combine style and comfort to transform your living spaces into modern sanctuaries.
                         </p>
