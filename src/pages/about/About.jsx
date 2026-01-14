@@ -2,7 +2,6 @@ import React from 'react'
 
 import aboutBgImg from "../../assets/about-background.jpg"
 import Experience from './../home/Experience';
-import Expricences from 'c:/Users/User/Downloads/panto-furniture-landing-page-react-js-main/src/pages/home/Expricences';
 
 const About = () => {
   return (
