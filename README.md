@@ -2,11 +2,7 @@
 
 Welcome to **Fancy Furniture** – Your Premier Online Furniture Destination
 
-## 📋 Overview
-
-Fancy Furniture is a modern, responsive e-commerce platform dedicated to providing high-quality furniture solutions for every space. Browse our curated collection of sofas, chairs, tables, and home décor items designed to elevate your living experience.
-
-## ✨ Features
+Currently, two official plugins are available 
 
 - 🛍️ **Extensive Catalog** – Thousands of furniture pieces across multiple styles
 - 💳 **Secure Checkout** – Safe and easy payment processing
