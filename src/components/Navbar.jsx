@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaShoppingBag, FaTimes } from 'react-icons/fa'; // Using React Icons for hamburger menu
 import { CartContext } from '../context/CartContext';
+import logo from '../assets/logo3.png';
 
 // Define an array of nav items
 const navItems = [
@@ -56,7 +57,13 @@ const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out ${isScrolled ? 'bg-white shadow-md text-black' : 'bg-transparent text-white'}`}>
             <nav className="container flex items-center justify-between px-4 py-6 mx-auto max-w-screen-2xl">
-                <NavLink to="/" className="font-bold">Panto</NavLink>
+                <NavLink to="/" className="flex items-center">
+                    <img
+                        src={logo}
+                        alt="Fancy Furniture Logo"
+                        className="object-contain w-32 h-auto transition-transform duration-300 md:w-40 hover:scale-105"
+                    />
+                </NavLink>
 
                 {/* Hamburger Icon for Mobile */}
                 <div className="text-xl cursor-pointer md:hidden" onClick={toggleMenu}>
