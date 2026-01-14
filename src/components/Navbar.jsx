@@ -78,7 +78,7 @@ const Navbar = () => {
 
                 <div className="relative hidden cursor-pointer md:block">
                     <FaShoppingBag className="text-xl" />
-                    <sup className="absolute top-0 flex items-center justify-center w-5 h-5 text-xs text-white rounded-full -right-3 bg-primary">
+                    <sup className="absolute top-0 flex items-center justify-center w-5 h-5 text-xs text-white rounded-full -right-3 bg-amber-500">
                         {cartCount}
                     </sup>
                 </div>
